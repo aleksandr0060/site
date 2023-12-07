@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="log-form">
+            <h2>Отправка формы в телеграм</h2>
+            <form class="telegram-form">
+                <input type="text" name="trackname" placeholder="Название трека" autocomplete="off" />
+                <input type="text" name="name" placeholder="Полное ФИО одного из артистов" autocomplete="off" />
+                <input type="text" name="nik" placeholder="Никнейм(если больше 1 артиста, то через запятую)"
+                    autocomplete="off" />
+                <input type="text" name="janr" placeholder="Жанр" autocomplete="off" />
+                <input type="text" name="sertext"
+                    placeholder="Серый текст(prod.by и т.д. Если не нужно указывать, то оставьте поле пустым)"
+                    autocomplete="off" />
+                <input type="text" name="vk/tg" placeholder="Контакт для связи(Вк/Тг)" autocomplete="off" />
+                <label for="file"> Доказательства права на бит(Скриншот переписки или иные док-ва) </label>
+                <input id="file" type="file" name="file"
+                    placeholder="Доказательства права на бит(Скриншот переписки или иные док-ва)" />
+                <label for="file">Трек в формате wav </label>
+                <input id="file" type="file" name="file" placeholder="" />
+                <label for="file">Обложка 3000x3000 </label>
+                <input id="file" type="file" name="file" placeholder="" />
+                <button type="submit" class="btn">отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
